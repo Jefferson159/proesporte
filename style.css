@@ -1,0 +1,309 @@
+* {
+  padding: 0%;
+}
+    
+
+  
+   a {
+      color: rgb(206, 202, 202);
+      text-decoration: none;
+      transition: 0.3s;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     
+      
+    }
+    
+    a:hover {
+      opacity: 0.7;
+    }
+    
+    .logo {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+     
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+      background: #064955da;
+      height: 8vh;
+ 
+      
+    }
+    
+    main {
+      background: url("bg.jpg") no-repeat center center;
+      background-size: cover;
+      height: 92vh;
+      
+    }
+    
+    .nav-list {
+      list-style: none;
+      display: flex;
+     
+    }
+    
+    .nav-list li {
+      letter-spacing: 3px;
+      margin-left: 32px;
+      
+    }
+    
+    .mobile-menu {
+      display: none;
+      cursor: pointer;
+    }
+    
+    .mobile-menu div {
+      width: 32px;
+      height: 2px;
+      background: #fff;
+      margin: 8px;
+      transition: 0.3s;
+    }
+    
+    @media (max-width: 999px) {
+      body {
+        overflow-x: hidden;
+      }
+      .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background:#135fa7;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 200;
+        
+      }
+      .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+      }
+      .mobile-menu {
+        display: block;
+      }
+    }
+    
+    .nav-list.active {
+      transform: translateX(0);
+    }
+    
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .mobile-menu.active .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+      opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+    img{
+      margin-top: 10%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .rodape{
+      background: #000000;
+      height: 15vh;
+  
+    }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #0c4857;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .card{
+  
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   }
+
+   .img{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .Artilheiro{
+    width: 80%;
+   }
+
+   #log {
+display: flexbox;
+    width: 80%;
+    height: 50%;
+   }
+
+   #imgthu{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+   }
+
+
+   .container{
+    position: relative;
+    
+
+   }
+   .legenda{
+    position: absolute;
+    left: 10px;
+    bottom: -15px;
+   }
+   .legenda2{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    color: white;
+    font-size: 10px;
+   }
+
+   /*-----------------pagina campeonatos ----------------------*/
+   .boximg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+   
+   }
+
+   header1 img {
+    width:161px;
+    height: 170px;
+    border-radius: 100%;
+    border: 5px solid rgb(64, 0, 128);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+   
+   
+
+
+   
