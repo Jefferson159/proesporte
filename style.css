@@ -1,5 +1,6 @@
 * {
   padding: 0%;
+ 
 }
     
 
@@ -238,14 +239,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+   
+   
    }
 
    .Artilheiro{
     width: 80%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
    }
 
    #log {
-display: flexbox;
+    display: flexbox;
     width: 80%;
     height: 50%;
    }
@@ -258,12 +267,17 @@ display: flexbox;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 5%;
+    
+   
   
    }
 
 
    .container{
     position: relative;
+   
+    
     
 
    }
@@ -278,28 +292,77 @@ display: flexbox;
     bottom: 5px;
     color: white;
     font-size: 10px;
+    align-items: center;
    }
 
    /*-----------------pagina campeonatos ----------------------*/
    .boximg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    width: 40%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
    
+    justify-content: center;
+    transition: cubic-bezier(1);
+    margin-top: 10%;
+    margin-bottom: 5%;
+   border-radius: 50px;
    
+
+   
+
+   
+   
+  
+   }
+   /*-----------------border das paginas ----------------------*/
+   .border{
+  width: 100%;
+    height: 70px;
+   background-color: #135fa7;
+   border-radius: 20px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   }
+
+   .borderpg01{
+    width: 100%;
+    height: 70px;
+   background-color: #0d992b;
+   border-radius: 10px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 10% ;
    }
 
    header1 img {
     width:161px;
     height: 170px;
     border-radius: 100%;
-    border: 5px solid rgb(64, 0, 128);
+    border: 5px solid rgb(7, 173, 43);
     display: block;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    
+  }
+  .texte{
+   
+    font-size: 20px;
+    color: rebeccapurple;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  #carouselExampleRide {
+    margin-left: auto;
+    margin-right: auto;
   }
 
    
