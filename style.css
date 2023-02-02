@@ -1,6 +1,7 @@
 * {
-  padding: 0%;
- 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
     
 
@@ -290,7 +291,16 @@
     position: absolute;
     left: 10px;
     bottom: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    align-items: center;
+   }
+
+   .legenda3 {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    color: rgb(17, 16, 16);
     font-size: 10px;
     align-items: center;
    }
@@ -365,7 +375,34 @@
     margin-right: auto;
   }
 
-   
+  .kodfun-galeri{
+
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+
+  }  
+
+  .kodfun-galeri > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+  }
+
+  .paragrafo{
+    color: #000000;
+  }
+
+  btn-group{
+    display: block;
+  margin-bottom: -20;
+  margin-top: -20;
+  }
+
+  
    
 
 
