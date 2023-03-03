@@ -359,6 +359,7 @@
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    margin: auto
     
   }
   .texte{
@@ -380,6 +381,7 @@
     display: flex;
     height: 20rem;
     gap: 1rem;
+    margin: auto;
 
   }  
 
@@ -402,8 +404,50 @@
   margin-top: -20;
   }
 
-  
+  #ranking{
    
+    padding: 90px 50px;
+    text-align: center;
+    background-color: #366c9e;
+    margin: auto;
+    border-radius: 80px;
+  }
+   
+/********************carde titulos**************************************************/
+
+#title {
+  background-color: rgb(151, 81, 216);
+  width: 350px;
+  padding: 15px 50px ;
+  border-radius: 20px;
+  margin: auto;
+  align-items: center; 
+ margin-top: 25px;
+
+  }
+
+#titletwo{
+  color: white;
+}
+tbody{
+background-color: #e4f0f5;
+      border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+
+#tdprimeiro{
+  background-color: rgb(95, 221, 204);
+}
+
+#lista{
+  padding-top: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+ 
+}
+
 
 
    
