@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
     
 
@@ -276,7 +277,11 @@
 
 
    .container{
-    position: relative;
+    display: flex;
+   justify-items: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
    
     
     
@@ -341,7 +346,7 @@
    .borderpg01{
     width: 100%;
     height: 70px;
-   background-color: #0d992b;
+   background-color: #0d5399;
    border-radius: 10px;
    align-items: center;
    display: flex;
@@ -353,13 +358,15 @@
     width:161px;
     height: 170px;
     border-radius: 100%;
-    border: 5px solid rgb(7, 173, 43);
+    border: 5px solid rgb(7, 109, 173);
     display: block;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
-    margin: auto
+    margin: auto;
+    margin-top: 20px;
+    color: white;
     
   }
   .texte{
@@ -446,6 +453,14 @@ background-color: #e4f0f5;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
  
+}
+
+#video{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
